@@ -313,5 +313,14 @@
 
     update_color_picker_style()
     </script>
+    <script>
+    // ブラウザがPWA（Service Worker）に対応しているか確認
+    if ('serviceWorker' in navigator) {
+      // 既存のservice-worker.jsを登録する
+      navigator.serviceWorker.register('./service-worker.js')
+        .then(() => console.log('Service Worker 登録成功！'))
+        .catch(err => console.error('Service Worker 登録失敗:', err));
+    }
+    </script>
 </body>
 </html>
