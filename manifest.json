@@ -5,6 +5,7 @@
   "display": "standalone",
   "background_color": "#f0f0f0",
   "theme_color": "#007bff",
+  "orientation": "portrait-primary",
   "icons": [
     {
       "src": "https://raw.githubusercontent.com/5-ieat/gazouhenkan/main/ga.ico",
