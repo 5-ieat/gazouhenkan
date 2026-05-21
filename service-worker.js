@@ -5,7 +5,7 @@ self.addEventListener('fetch', function(event) {
     './index.html',
     './manifest.json',
     './sub.html',
-    './ga.ico'
+    './ga.png'
 
 ];
 self.addEventListener('install', (event) => {

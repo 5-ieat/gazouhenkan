@@ -8,12 +8,12 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "https://raw.githubusercontent.com/5-ieat/gazouhenkan/refs/heads/main/ga.ico",
+      "src": "https://raw.githubusercontent.com/5-ieat/appsisakuhin/main/ga.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "https://raw.githubusercontent.com/5-ieat/gazouhenkan/refs/heads/main/ga.ico",
+      "src": "https://raw.githubusercontent.com/5-ieat/appsisakuhin/main/ga.png",
       "sizes": "512x512",
       "type": "image/png"
     }
