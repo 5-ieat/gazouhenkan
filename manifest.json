@@ -8,14 +8,14 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "https://raw.githubusercontent.com/5-ieat/gazouhenkan/main/ga.ico",
+      "src": "https://raw.githubusercontent.com/5-ieat/gazouhenkan/refs/heads/main/ga.ico",
       "sizes": "192x192",
-      "type": "image/x-icon"
+      "type": "image/png"
     },
     {
-      "src": "https://raw.githubusercontent.com/5-ieat/gazouhenkan/main/ga.ico",
+      "src": "https://raw.githubusercontent.com/5-ieat/gazouhenkan/refs/heads/main/ga.ico",
       "sizes": "512x512",
-      "type": "image/x-icon"
+      "type": "image/png"
     }
   ]
 }
