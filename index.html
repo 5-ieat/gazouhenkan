@@ -234,9 +234,8 @@
         img = ImageOps.exif_transpose(img)
         if mosaic_val > 0:
             c = 2**(9 - (mosaic_val + 1))
-            f, g = int(w/c), int(h/c)
-            if f > 0 and g > 0:
-                img = img.resize((f, g), resample=Image.NEAREST).resize((w, h), resample=Image.NEAREST)
+            # 割り算の順番を正しく直しました
+            f, g = int(w * c / 300), int(h * c / 300)
 
         if selected_rgb:
             alpha = 100
