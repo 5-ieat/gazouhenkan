@@ -227,11 +227,10 @@
         dark_mode = document.querySelector("#dark_mode").checked
         sirokuro_mode = document.querySelector("#sirokuro_mode").checked
 
-        img = Image.open(io.BytesIO(array_buffer.to_bytes())).convert("RGBA")
-        img = ImageOps.exif_transpose(img)
-
         file = file_list.item(0)
         array_buffer = await file.arrayBuffer()
+        img = Image.open(io.BytesIO(array_buffer.to_bytes())).convert("RGBA")
+        img = ImageOps.exif_transpose(img)
         w, h = img.size
         if mosaic_val > 0:
             c = 2**(9 - (mosaic_val + 1))
