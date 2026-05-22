@@ -238,6 +238,7 @@
             f, g = int(w * c / 300), int(h * c / 300)
             if f > 0 and g > 0:
                 img = img.resize((f, g), resample=Image.NEAREST).resize((w, h), resample=Image.NEAREST)
+        img = ImageOps.exif_transpose(img)
 
         if selected_rgb:
             alpha = 100
