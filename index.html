@@ -227,18 +227,18 @@
         dark_mode = document.querySelector("#dark_mode").checked
         sirokuro_mode = document.querySelector("#sirokuro_mode").checked
 
+        img = Image.open(io.BytesIO(array_buffer.to_bytes())).convert("RGBA")
+        img = ImageOps.exif_transpose(img)
+
         file = file_list.item(0)
         array_buffer = await file.arrayBuffer()
-        img = Image.open(io.BytesIO(array_buffer.to_bytes())).convert("RGBA")
         w, h = img.size
-        img = ImageOps.exif_transpose(img)
         if mosaic_val > 0:
             c = 2**(9 - (mosaic_val + 1))
             # 割り算の順番を正しく直しました
             f, g = int(w * c / 300), int(h * c / 300)
             if f > 0 and g > 0:
                 img = img.resize((f, g), resample=Image.NEAREST).resize((w, h), resample=Image.NEAREST)
-        img = ImageOps.exif_transpose(img)
 
         if selected_rgb:
             alpha = 100
